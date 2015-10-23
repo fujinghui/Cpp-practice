@@ -8,3 +8,11 @@
 *.xcscheme
 
 *.plist
+
+*.xccheckout
+
+*.pbxproj
+
+*.xcworkspacedata
+
+*.pbxproj
