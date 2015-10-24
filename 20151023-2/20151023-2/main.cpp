@@ -15,5 +15,7 @@ int main() {
     cout << "hex -> b = " << b << endl;
     cout << oct;
     cout << "oct -> b = " << b << endl;
+    char t = 'A';
+    cout.put(t);
     return 0;
 }
