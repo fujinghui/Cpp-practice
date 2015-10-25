@@ -17,5 +17,10 @@ int main() {
     cout << "oct -> b = " << b << endl;
     char t = 'A';
     cout.put(t);
+    cout.put('\n');
+    
+    const int Months = 12;
+    cout << dec;
+    cout << Months << endl;
     return 0;
 }
