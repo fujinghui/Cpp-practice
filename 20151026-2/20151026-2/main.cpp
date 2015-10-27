@@ -6,6 +6,7 @@ int main() {
     string str1;
     string str2 = "hello";
     string str3;
+    cout << "please enter the string:" << endl;
     getline(cin,str3);
     str1 = str2;
     str1 += " world";
@@ -17,5 +18,6 @@ int main() {
     cout << str3 << endl;
     cout << R"("sb->hdvsyu"="\n"=)" << endl;
     cout << R"+*(hehe"(88)"~~~~)+*";
+    cout << endl;
     return 0;
 }
