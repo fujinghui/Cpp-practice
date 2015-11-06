@@ -36,3 +36,16 @@ int main() {
     << others << " others.\n";
     return 0;
 }
+isalnum()字母数字
+isalpha()字母
+iscntrl()控制字符
+isdigit()
+isgraph()除空格之外的打印字符
+islower()
+isprint()打印字符（包括空格）
+ispunct()
+isspace()
+isupper()
+isxdigit()十六进制数字
+tolower()如果参数是大写字符，则返回其小写，否则返回该参数
+toupper()如果参数是小写字符，则返回其大写，否则返回该参数
