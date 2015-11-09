@@ -1,0 +1,25 @@
+//STL，STL，STL。重要的事情要说三遍
+//可以用下面的代码来显示容器的内容
+for (pd = scores.begin[]; pd != scores.end(); pd++)
+    cout << *pd << endl;
+
+//erase()方法：删除矢量中给定区间的元素
+//第一个和第二个元素区间
+scores.erase(scores.begin(); scores.begin() + 2);
+//区间为[a,b),左闭右开
+
+
+//insert()方法 第一个参数插入位置 第二个和第三个迭代器参数定义了被插入区间，该区间通常是另一个容器对象的一部分
+vector<int> old_v;
+vector<int> new_v;
+...
+old_v.insert(old_v.begin(), new_v.begin() + 1, new_v.end());
+
+//for_each()
+for_each(books.begin(); books.end(), ShowReview);
+
+//random_shuffle()
+random_shuffle(books.begin(), books.end());
+
+//sort()
+sort(coolstuff.begin(), coolstuff.end());
