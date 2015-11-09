@@ -1,0 +1,29 @@
+//7种序列容器类型
+//vector
+//如果dice是一个vector<int>容器，而show(int)是现实一个整数的函数，
+//则下面的代码将首先正向显示dice的内容，然后反向显示
+#include <vector>
+for_each(dice.begin(), dice.end(), show);
+cout << endl;
+for_each(dice.rbegin(), dice.rend(), show);
+cout << endl;
+//vecotr模板类是最简单的序列类型，除非其他类型的特殊优点能够更好地满足程序的要求，否则应该默认使用这种类型
+
+
+//deque双端队列(double-ended queue)
+#include <deque>
+在两端执行插入和删除操作 
+从deque对象的开始位置插入和删除元素的时间是固定的
+
+
+//list 双向链表
+#include <list>
+除了第一个元素和最后一个之外，每个元素都与前后的元素想连接，这意味着可以双向遍历链表
+list在链表中任意位置进行插入和删除的时间是固定的
+因此，vector强调的是通过随机访问进行快速访问，而list强调的是元素的快速插入和删除
+
+void merge(list<T,Alloc> &x)
+void remove(const T &val)
+void sort()
+void splice(iterator pos, list<T,Alloc> x) //将链表x的内容插入到pos的前面。x将为空，这个函数的复杂度为固定时间
+void unique() //将连续的相同元素压缩为单个元素
