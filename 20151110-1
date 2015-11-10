@@ -1,0 +1,33 @@
+//forward_list 单链表
+每个节点都只链接到下一个节点，而没有链接到前一个节点
+相比list，forward_list更简单、更紧凑、但功能也更少
+
+//queue
+#include <queue>
+bool empty()const
+size_type size()const
+T &front() //返回指向队首元素的引用
+T &back()
+void push(const T &x) //在队尾插入x
+void pop()
+要使用队列中的值，应先使用front()来检索这个值，然后使用pop()将它从队列中删除
+
+
+//priority_queue
+在priority_queue中，最大的元素被移到队首
+
+
+//stack
+#include <stack>
+bool empty()const
+size_type size()const
+T &top()
+void push(const T &x)
+void pop()
+要使用栈中的值，必须先使用top()来检索这个值，然后使用pop()将它从栈中删除
+
+
+//array
+#include <array>
+copy()
+for_each()
