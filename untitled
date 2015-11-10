@@ -1,0 +1,21 @@
+//使用STL
+vector<string> words;
+string input;
+while (cin >> input && input != "quit")
+    word.push_back(input);
+
+set<string> wordset;
+transform(words.begin(), words.end(), 
+    insert_iterator<set<string>> (wordset, sowrset.begin()), ToLower);
+
+string &ToLower(string &st) {
+    transform(st.begin(), st.end(), st.begin(), tolower);
+    return st;
+}
+
+map<string, int> wordmap;
+set<string>::iterator si;
+for (si = wordset.begin(), si != wordset.end(), si++)
+    wordmao[*si] = count(words.begin(), word.end(), *si);
+for (si = wordset.begin(), si != wordset.end(), si++)
+    cout << *si << ": " << wordmap[*si] << endl;
