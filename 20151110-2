@@ -1,0 +1,21 @@
+//关联容器 set/multiest/map/multimap
+//提供对元素的快速访问
+//set
+#include <set>
+set<string> A;
+const int N = 6;
+string s1[N] = {"buffoon", "thinkers", "for", "heavy", "can", "for"};
+set<string> A(s1, s1 + N);
+ostream_iterator<string, char> out(cout," ");
+copy(A.begin(), A.end(), out);
+(集合被排序，键是唯一的，集合中不会出现重复的元素)
+
+//集合A，B的并集,并显示它
+set_union(A.begin(), A.end(), B.begin(), B.end(), ostream_iterator<string, char> out(cout, " "));
+//集合A，B的并集，并把它放到C中
+set_union(A.begin(), A.end(), B.begin(), B.end(), insert_iterator<set<string>> (C, C.begin()));
+
+set_intersection()
+set_difference()
+lower_bound()
+upper_bound()
