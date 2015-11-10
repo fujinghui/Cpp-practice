@@ -15,7 +15,7 @@ string &ToLower(string &st) {
 
 map<string, int> wordmap;
 set<string>::iterator si;
-for (si = wordset.begin(), si != wordset.end(), si++)
-    wordmao[*si] = count(words.begin(), word.end(), *si);
-for (si = wordset.begin(), si != wordset.end(), si++)
+for (si = wordset.begin(); si != wordset.end(); si++)
+    wordmap[*si] = count(words.begin(), word.end(), *si);
+for (si = wordset.begin(); si != wordset.end(); si++)
     cout << *si << ": " << wordmap[*si] << endl;
