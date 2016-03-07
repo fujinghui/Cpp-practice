@@ -138,6 +138,68 @@ int main() {
 
 
 4.stack
+#include <iostream>
+#include <stack>
+using namespace std;
+int main() {
+    stack<int> s;
+    for (int i = 1; i <= 10; i++) {
+        s.push(i);
+    }
+    s.pop();
+    cout << s.top() << endl;
+    
+    cout << s.size() << endl;
+    
+    for (int i = 1; i <= 9; i++) {
+        cout << s.top() << " ";
+        s.pop();
+    }
+    
+    cout << endl << s.empty() << endl << s.size();
+    
+    return 0;
+}
+
+
+
+5.deque
+#include <iostream>
+#include <deque>
+using namespace std;
+int main() {
+    deque<int> q;
+    
+    for (int i = 1; i <= 10; i++) {
+        q.push_back(i);
+        cout << q[i - 1] << " " << q.size() << " " << q.max_size() << endl;
+    }
+    
+//    q.max_size()为能存储的最大值
+    
+    q.push_front(999);
+    q.pop_back();
+    
+    for (int i = 0; i <= 20; i++) {
+        cout << q[i] << " ";
+    }
+
+    q.pop_front();
+    cout << endl << q[0] << " " << q[9] << " ";
+    
+    return 0;
+}
+
+
+
+6.list
+#include <iostream>
+#include <list>
+using namespace std;
+int main() {
+	
+	return 0;
+}
 
 
 
