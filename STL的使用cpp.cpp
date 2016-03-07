@@ -1,10 +1,3 @@
-set
-map
-vector
-stack
-deque
-list
-
 1.set 集合
 #include <iostream>
 #include <set>
@@ -164,6 +157,15 @@ int main() {
 
 
 5.deque
+双端队列，可以在两端进行插入和删除
+q.pop_back()
+q.pop_front()
+q.push_back(2);
+q.push_front(3);
+
+可以使用下标来访问这个队列。
+在队首插入元素后，这个元素就是q[0]，其他的都会往后移动一个了。
+
 #include <iostream>
 #include <deque>
 using namespace std;
@@ -188,17 +190,6 @@ int main() {
     cout << endl << q[0] << " " << q[9] << " ";
     
     return 0;
-}
-
-
-
-6.list
-#include <iostream>
-#include <list>
-using namespace std;
-int main() {
-	
-	return 0;
 }
 
 
