@@ -7,7 +7,7 @@ struct inflatable {
 };
 int main() {
     using namespace std;
-    inflatable *ps = new inflatable;
+    struct inflatable *ps = new inflatable;
     cout << "enter name of inflatable item: ";
     cin.get(ps->name,20);
     cout << "enter volume in cubic feet: ";
